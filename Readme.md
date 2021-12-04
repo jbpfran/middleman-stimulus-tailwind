@@ -35,7 +35,7 @@ I built the pipeline with yarn but you can modify it to only use npm.
 ### Installation
 Create your project using this git
 
-    middleman init project_name -T myname/middleman-template
+    middleman init project_name -T jbpfran/middleman-stimulus-tailwind
 
     cd project_name
 
@@ -49,7 +49,7 @@ then you should be able to run
 ### Configuration
 Don't forget to change the name of the project in package.json
 
-`"name": "middleman template",`
+`"name": "middleman-turbo-stimulus-tailwind",`
 
 The config.rb can also be (heavily) reviewed to fit your needs
 
