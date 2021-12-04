@@ -1,6 +1,6 @@
 # Middleman Turbo - Stimulus - Tailwind
 
-This is my basic template for Middleman 2.x.
+This is my basic template for Middleman 4.x.
 
 ### It includes :
 - [Turbo](https://turbo.hotwired.dev)
