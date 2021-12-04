@@ -1,0 +1,11 @@
+.bundle
+.cache
+cache/
+.DS_Store
+.sass-cache
+.tmp/
+node_modules/
+build/
+Gemfile.lock
+yarn.lock
+templates/

@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    / Use the title from a page's frontmatter if it has one
+    %title
+      = yield_content :title
+    = stylesheet_link_tag "style"
+    = javascript_include_tag "application"
+  %body
+    #scroll-progress{"data-controller" => "scroll-progress"}
+    #navbar{class: "bg-indigo-900"}
+      /= partial "navbar"
+      = partial "site_navigation"
+    /%turbo-frame{ id: "site-nav", src: "/frames/site_navigation.html" }
+    /  .flex
+    /    = image_tag "spinner.gif", class: "mx-auto w-8 h-8"
+    = yield
+    #footer{class: "bg-gray-50"}
+      = partial "footer"

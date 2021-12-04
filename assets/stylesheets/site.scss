@@ -1,0 +1,18 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+@import "swiper/swiper-bundle.css";
+
+@import "./components/scroll_progress";
+
+body {
+  @apply font-sans bg-blue-50 bg-opacity-25 text-base subpixel-antialiased font-normal
+}
+
+ul {
+  @apply list-disc list-inside
+}
+
+.section {
+  @apply md:container md:mx-auto md:px-4 py-4
+}
